@@ -1,7 +1,7 @@
 const editableDiv = document.getElementById('editableDiv')
 
 const storedValue = localStorage.getItem('content')
-if (storedValue === null && storedValue.length > 3) {
+if (storedValue !== null && storedValue.length > 3) {
   editableDiv.innerText = storedValue
 } else {
   editableDiv.innerText = '...'
